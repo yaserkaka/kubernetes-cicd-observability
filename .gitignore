@@ -1,0 +1,42 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# --- Secrets and credentials: never commit these ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+kubeconfig
+*.kubeconfig
+.kube/
+
+# --- Helm ---
+charts/*/charts/
+charts/*/*.tgz
+
+# --- Load tests and local scratch ---
+k6-results/
+*.log
+tmp/
+
+# --- IDE and OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
