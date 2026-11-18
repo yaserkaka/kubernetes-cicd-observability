@@ -1,5 +1,4 @@
-# Keep LF line endings in the repo, even when edited on Windows.
-# Shell scripts and YAML break with CRLF on Linux runners and k3s nodes.
+# keep LF line endings (scripts and yaml run on linux)
 * text=auto eol=lf
 *.png binary
 *.jpg binary
